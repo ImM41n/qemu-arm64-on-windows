@@ -1,0 +1,16 @@
+#cloud-config
+users:
+  - name: test
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    groups: sudo
+    shell: /bin/bash
+    lock_passwd: false
+    passwd: $6$AaqfXnB9ituC$.EnG.wb5gWAo00JSC.pNKrxKWbR3SChO0Kz1Vp3CLJ31jIxu043SZZRsQjUKFU8TDrDnZ0.gXOEG.RHeA7gYE/
+
+chpasswd:
+  list: |
+    test:123
+  expire: False
+
+ssh_pwauth: True
+

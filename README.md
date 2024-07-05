@@ -73,6 +73,11 @@ C:\'Program Files'\qemu\qemu-system-aarch64 -m 2048 -cpu max -M virt -nographic 
 
 → You can ssh connect to the virtual machine: `ssh user@127.0.0.1 -p 2222`
 
+## File example (chip Intel i5-11400H)
+- varstore.img
+- efi.img
+- cloud-init.iso (test:123)
+
 # Reference
 
 https://ubuntu.com/server/docs/boot-arm64-virtual-machines-on-qemu
